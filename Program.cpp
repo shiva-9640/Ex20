@@ -63,13 +63,13 @@ END_MESSAGE_MAP()
 class MyApp:public CWinApp
 {
 public:
-		int InitInstance()
+		BOOL InitInstance()
 		{
 			MyFrame *ptr;
 			ptr=new MyFrame();
 			m_pMainWnd=ptr;
 			ptr->ShowWindow(1);
-			return 1;
+			return TRUE;
 		}
 };
 MyApp Obj;
